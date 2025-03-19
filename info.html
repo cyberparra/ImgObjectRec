@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <title>Object Detection App - Info</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav> 
+        <a href="index.html">Detection</a>
+        <a href="info.html">Info</a>
+    </nav>
+    <div class="container info-container">
+        <h1>COCO-SSD: Rilevamento Oggetti</h1>
+        
+        <div class="info-card">
+            <h3>Che cos'è COCO-SSD?</h3>        
+            <p><b>COCO-SSD</b> (Common Objects in Context - Single Shot MultiBox Detector) è un modello di rilevamento oggetti pre-addestrato e ottimizzato per l'esecuzione in tempo reale nei browser web utilizzando TensorFlow.js.</p>
+            <p>Il modello è in grado di identificare e localizzare più oggetti all'interno di una singola immagine o flusso video, rendendolo ideale per applicazioni basate su browser senza richiedere elaborazione lato server.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Come Funziona</h3>
+            <p>COCO-SSD utilizza una rete neurale convoluzionale (CNN) per estrarre le caratteristiche dalle immagini, quindi applica l'algoritmo Single Shot MultiBox Detector (SSD) per prevedere le coordinate dei riquadri e le etichette delle classi degli oggetti rilevati.</p>
+            <p>Il modello elabora le immagini in questi passaggi:</p>
+            <ol>
+                <li>L'immagine di input passa attraverso una CNN per estrarre le caratteristiche</li>
+                <li>L'algoritmo SSD prevede le posizioni e le classi degli oggetti</li>
+                <li>La soppressione non-massima rimuove le rilevazioni sovrapposte</li>
+                <li>Le previsioni finali vengono restituite con punteggi di confidenza</li>
+            </ol>
+        </div>
+
+        <div class="info-card">
+            <h3>Capacità del Modello</h3>
+            <p>COCO-SSD può rilevare 80 diverse categorie di oggetti dal dataset COCO, tra cui:</p>
+            <div class="categories-grid">
+                <span>Persona</span>
+                <span>Auto</span>
+                <span>Cane</span>
+                <span>Sedia</span>
+                <span>Bottiglia</span>
+                <span>Computer</span>
+                <span>Libro</span>
+                <span>Telefono</span>
+                <span>E molti altri...</span>
+            </div>
+            <p>Il modello fornisce:</p>
+            <ul>
+                <li>Classificazione dell'oggetto (cos'è?)</li>
+                <li>Localizzazione dell'oggetto (dov'è?)</li>
+                <li>Punteggi di confidenza (quanto è sicuro il modello?)</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Dettagli Tecnici</h3>
+            <p>COCO-SSD è disponibile in diverse versioni con diversi compromessi tra velocità e precisione:</p>
+            <ul>
+                <li><b>Lite:</b> Più veloce ma meno accurato</li>
+                <li><b>MobileNet:</b> Buon equilibrio tra velocità e precisione</li>
+                <li><b>Base:</b> Più accurato ma più lento</li>
+            </ul>
+            <p>Questa applicazione utilizza la versione MobileNet per prestazioni ottimali nei browser.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Risorse</h3>
+            <p>Scopri di più su COCO-SSD da queste risorse:</p>
+            <ul class="resources-list">
+                <li><a href="https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd" target="_blank">TensorFlow.js COCO-SSD su GitHub</a></li>
+                <li><a href="https://www.tensorflow.org/js/models" target="_blank">Documentazione dei Modelli TensorFlow.js</a></li>
+                <li><a href="https://cocodataset.org/" target="_blank">Sito Ufficiale del Dataset COCO</a></li>
+                <li><a href="https://ml5js.org/reference/api-ObjectDetector/" target="_blank">Documentazione ML5.js Object Detector</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Object Detection via COCO-SSD</p>
+        <p>by: <a href="https://www.adrianoparracciani.it/">Adriano Parracciani aka cyberparra</a></p>
+    </footer>
+</body>
+</html>

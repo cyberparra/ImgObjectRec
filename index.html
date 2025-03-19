@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Object Detection App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <nav> 
+    <a href="index.html">Detection</a>
+    <a href="info.html">Info</a>
+</nav>
+
+  <div class="container">
+    <h1>Object Detection</h1>
+    <div class="status" id="status">Upload an image to detect objects</div>
+    <div class="controls">
+      <div class="drop-area" id="drop-area">
+        <p>Drag & drop an image here</p>
+      </div>
+      <input type="file" id="file-input" accept="image/*">
+      <button class="file-button" id="file-button">Or Select Image</button>
+    </div>
+    <div id="canvas-container"></div>
+    <div class="detection-results" id="results"></div>
+  </div>
+
+  <script src="sketch.js"></script>
+
+  <footer class="footer">
+    <p>© 2025 Object Detection via CCO-SSD</p>
+    <p>by: <a href="https://www.adrianoparracciani.it/">Adriano Parracciani aka cyberparra</a></p>
+</footer>
+</body>
+</html>
